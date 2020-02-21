@@ -1,0 +1,16 @@
+.post-date-block{
+	display: flex;
+	align-items: center;
+	font-size: 13px;
+	line-height: 14px;
+	color: #98a8b6;
+	margin-bottom: 10px;
+
+	.block-icon{
+		margin-right: 5px;
+		display: block;
+		fill: $lightblue;
+		width: 12px;
+		height: 12px;
+	}
+}

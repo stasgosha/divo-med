@@ -1,0 +1,87 @@
+.video-block{
+	position: relative;
+
+	.block-player{
+		position: relative;
+		width: 100%;
+		cursor: pointer;
+		overflow: hidden;
+		border-radius: 7px;
+
+		&:before{
+			content: '';
+			display: block;
+			padding-top: 64.84%;
+		}
+
+		.video-preview{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			object-fit: cover;
+			object-position: center center;
+			font-family: 'object-fit: cover; object-position: center center;';
+		}
+
+		&:after{
+			content: '';
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			background: #2191a7;
+			opacity: .2;
+			transition: all $t;
+		}
+
+		&:hover{
+			&:after{
+				opacity: .4;
+			}
+		}
+	}
+
+	.play-icon{
+		appearance: none;
+		box-shadow: 0;
+		border: 0;
+		width: 46px;
+		height: 46px;
+		border-radius: 50%;
+		background: $primary;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all $t;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 5;
+
+		img{
+			transform: translateX(2px);
+			display: block;
+		}
+
+		&:hover{
+			background: $lightblue;
+		}
+	}
+
+	.block-footer{
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.block-caption{
+		margin-top: 10px;
+		margin-bottom: 7px;
+	}
+}

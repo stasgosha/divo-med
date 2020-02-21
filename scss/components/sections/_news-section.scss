@@ -1,0 +1,21 @@
+.news-section{
+	padding: 30px 0 35px;
+
+	.section-header{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 35px;
+	}
+
+	.news-slider-dots,
+	.proposals-slider-dots{
+		.slick-dots{
+			position: static;
+		}
+	}
+
+	.section-caption{
+		margin-bottom: 0;
+	}
+}

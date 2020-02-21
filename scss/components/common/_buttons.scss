@@ -1,0 +1,43 @@
+.btn{
+	border: 0;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: bold;
+	padding: 5px 30px;
+	min-height: 50px;
+	background: $lightblue;
+	font-family: $main-font;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	transition: all $t;
+	cursor: pointer;
+	border-radius: 25px;
+	// min-width: 175px;
+	appearance: none;
+
+	&:hover{
+		background: darken($lightblue, 10%);
+	}
+
+	&.btn-white{
+		background: #fff;
+		color: $accent;
+	}
+
+	&.btn-small{
+		font-size: 13px;
+		min-height: 36px;
+	}
+
+	&:focus{
+		outline: none;
+	}
+
+	&.btn-fullwidth{
+		width: 100%;
+	}
+}

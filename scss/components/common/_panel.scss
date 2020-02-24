@@ -147,27 +147,11 @@
 		padding: 20px 25px 0;
 		color: $text-dark;
 
-		.socials-list{
-			margin-top: 25px;
-		}
+		.contact-block{
+			margin-bottom: 30px;
 
-		.btn{
-			padding-left: 25px;
-			padding-right: 25px;
-		}
-
-		.panel-phone{
-			margin-bottom: 20px;
-			font-size: 20px;
-			line-height: 1.1;
-			color: $text-dark;
-			text-decoration: none;
-			letter-spacing: 0.05em;
-			display: block;
-			font-weight: 400;
-
-			&:hover{
-				color: $primary;
+			&:last-child{
+				margin-bottom: 0;
 			}
 		}
 	}

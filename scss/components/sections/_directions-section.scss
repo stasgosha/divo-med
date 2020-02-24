@@ -26,6 +26,21 @@
 	.section-directions{
 		flex: auto;
 	}
+
+	@media screen and (max-width: 1199px){
+		.section-inner{
+			flex-direction: column;
+		}
+
+		.section-text{
+			width: 100%;
+		}
+
+		.section-directions{
+			width: 100%;
+			padding-top: 25px;
+		}
+	}
 }
 
 .directions-list{
@@ -34,6 +49,14 @@
 	.item{
 		width: 50%;
 		flex: none;
+	}
+
+	@media screen and (max-width: 767px){
+		flex-direction: column;
+
+		.item{
+			width: 100%;
+		}
 	}
 }
 
@@ -89,6 +112,17 @@
 			object-fit: contain;
 			object-position: right bottom;
 			font-family: 'object-fit: contain; object-position: right bottom;';
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		padding: 40px 20px;
+		overflow: hidden;
+
+		.card-image{
+			transform: translateX(20px);
+			width: 200px;
+			height: 220px;
 		}
 	}
 }

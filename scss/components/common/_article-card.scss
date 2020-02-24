@@ -78,6 +78,24 @@
 			}
 		}
 	}
+
+	@media screen and (max-width: 479px){
+		flex-direction: column;
+
+		.card-image{
+			width: 100%;
+			margin-right: 0;
+			margin-bottom: 10px;
+
+			&:before{
+				padding-top: 150px;
+			}
+		}
+
+		.card-caption{
+			font-size: 18px;
+		}
+	}
 }
 
 .articles-list{
@@ -85,5 +103,11 @@
 		padding-bottom: 22px;
 		margin-bottom: 22px;
 		border-bottom: 1px solid #dce2e7;
+
+		&:last-child{
+			margin-bottom: 0;
+			padding-bottom: 0;
+			border-bottom: 0;
+		}
 	}
 }

@@ -1,0 +1,28 @@
+.socials-list{
+	display: flex;
+	list-style: none;
+
+	li{
+		margin-right: 24px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		a{
+			display: block;
+			opacity: .32;
+
+			svg{
+				fill: #fff;
+				display: block;
+				width: 27px;
+				height: 27px;
+			}
+
+			&:hover{
+				opacity: 1;
+			}
+		}
+	}
+}

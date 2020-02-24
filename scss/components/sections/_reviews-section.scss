@@ -7,12 +7,40 @@
 
 	.section-slider{
 		padding: 0 60px;
+
+		@media screen and (max-width: 575px){
+			padding: 0 25px;
+		}
 	}
 }
 
 .reviews-slider{
 	.slick-arrow{
-		top: 100px;
+		top: 115px;
+
+		&.slick-prev{
+			left: -45px !important;
+		}
+
+		&.slick-next{
+			right: -45px !important;
+		}
+
+		@media screen and (max-width: 767px){
+			top: 155px;
+		}
+
+		@media screen and (max-width: 575px){
+			top: calc((100vw - 70px) * 0.6484 / 2 + 21px);
+
+			&.slick-prev{
+				left: -15px !important;
+			}
+
+			&.slick-next{
+				right: -15px !important;
+			}
+		}
 	}
 }
 

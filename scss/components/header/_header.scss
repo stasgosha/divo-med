@@ -17,6 +17,27 @@
 			padding-left: 35px;
 			flex: auto;
 		}
+
+		@media screen and (max-width: 1199px){
+			.header-left{
+				padding-right: 15px;
+			}
+
+			.header-right{
+				padding-left: 15px;
+			}
+		}
+
+		@media screen and (max-width: 991px){
+			.header-left{
+				padding-right: 30px;
+				border-right: 0;
+			}
+
+			.header-right{
+				padding-left: 30px;
+			}
+		}
 	}
 
 	.header-row{
@@ -30,8 +51,70 @@
 
 			.header-block{
 				padding: 0 15px;
-				width: 25%;
+
+				@media screen and (min-width: 1200px){
+					width: 25%;
+				}
 			}
+
+			@media screen and (max-width: 1199px){
+				width: calc(100% + 10px * 2);
+				margin-left: -10px;
+				margin-right: -10px;
+				
+				.header-block{
+					padding: 0 10px;
+				}
+			}
+		}
+
+		@media screen and (max-width: 991px){
+			&.first{
+				margin-bottom: 0;
+				width: calc(100% + 27px * 2);
+				margin-left: -27px;
+				margin-right: -27px;
+				margin-bottom: -15px;
+				flex-wrap: wrap;
+				align-items: center;
+
+				.header-block{
+					padding: 0 27px;
+					margin-bottom: 15px;
+					width: 50%;
+				}
+			}
+			&.second{
+				display: none;
+			}
+		}
+
+		@media screen and (max-width: 767px){
+			&.first{
+				display: none;
+			}
+		}
+	}
+}
+
+.logo-block{
+	display: block;
+
+	img{
+		display: block;
+		max-width: 100%;
+		height: 102px;
+	}
+
+	@media screen and (max-width: 1199px){
+		img{
+			height: 80px;
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		img{
+			height: 102px;
 		}
 	}
 }
@@ -70,6 +153,7 @@
 		font-size: 18px;
 		line-height: 1;
 		font-weight: bold;
+		white-space: nowrap;
 
 		&.small{
 			font-size: 14px;
@@ -83,6 +167,31 @@
 			}
 		}
 	}
+
+	&.white{
+		.block-icon{
+			fill: #fff;
+			border-right-color: rgba(#fff, .03);
+		}
+
+		.block-content{
+			color: #fff;
+		}
+
+		.block-value{
+			a{
+				color: #fff;
+
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 1199px){
+		// .block-
+	}
 }
 
 .top-nav{
@@ -92,17 +201,17 @@
 
 		> li{
 			margin-right: 20px;
+			font-size: 18px;
+			line-height: 20px;
 
 			&:last-child{
-				margin-right: 0;
+				margin-right: 0 !important;
 			}
 
 			> a{
 				display: block;
 				padding: 15px 0;
 				position: relative;
-				line-height: 20px;
-				font-size: 18px;
 				color: #495c6c;
 				font-weight: bold;
 
@@ -145,6 +254,11 @@
 				a{
 					cursor: default;
 				}
+			}
+
+			@media screen and (max-width: 1199px){
+				font-size: 16px;
+				margin-right: 10px;
 			}
 		}
 	}

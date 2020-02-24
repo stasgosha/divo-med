@@ -75,17 +75,24 @@
 							<div class="header-row second">
 								<nav class="top-nav">
 									<ul>
-										<li><a href="#">О клинике</a></li>
+										<li><a href="about.html">О клинике</a></li>
 										<li><a href="#">Стоматология</a></li>
 										<li><a href="#">Лечение</a></li>
 										<li><a href="#">Обследование</a></li>
-										<li><a href="#">Услуги</a></li>
-										<li><a href="#">Цены</a></li>
-										<li><a href="#">Отзывы</a></li>
-										<li><a href="#">Контакты</a></li>
+										<li><a href="services.html">Услуги</a></li>
+										<li><a href="prices.html">Цены</a></li>
+										<li><a href="reviews.html">Отзывы</a></li>
+										<li><a href="contacts.html">Контакты</a></li>
 									</ul>
 								</nav>
 							</div>
+						</div>
+						<div class="menu-opener-wrapper md-visible">
+							<button class="menu-opener" aria-label="Меню">
+								<span class="bar"></span>
+								<span class="cross bar"></span>
+								<span class="bar"></span>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -160,8 +167,8 @@
 					</div>
 					<div class="section-features">
 						<div class="container">
-							<div class="cards-list columns-4">
-								<div class="item">
+							<div class="features-slider">
+								<div class="slide">
 									<div class="feature-card">
 										<svg class="card-icon">
 											<use xlink:href="img/icons-sprite.svg#car"></use>
@@ -172,7 +179,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="item">
+								<div class="slide">
 									<div class="feature-card">
 										<svg class="card-icon">
 											<use xlink:href="img/icons-sprite.svg#doctor"></use>
@@ -183,7 +190,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="item">
+								<div class="slide">
 									<div class="feature-card">
 										<svg class="card-icon">
 											<use xlink:href="img/icons-sprite.svg#test-tube"></use>
@@ -194,7 +201,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="item">
+								<div class="slide">
 									<div class="feature-card">
 										<svg class="card-icon">
 											<use xlink:href="img/icons-sprite.svg#equipment"></use>
@@ -409,69 +416,73 @@
 								</ul>
 							</div>
 							<div class="column">
-								<h3 class="tpg-h3">Обследования</h3>
-								<ul class="services-list">
-									<li>
-										<a href="#" class="service-link">
-											<svg class="item-icon">
-												<use xlink:href="img/services-sprite.svg#vaccine"></use>
-											</svg>
-											<span class="item-text">Анализы </span>
-										</a>
-									</li>
-									<li>
-										<a href="#" class="service-link">
-											<svg class="item-icon">
-												<use xlink:href="img/services-sprite.svg#blood"></use>
-											</svg>
-											<span class="item-text">УЗИ</span>
-										</a>
-									</li>
-									<li>
-										<a href="#" class="service-link">
-											<svg class="item-icon">
-												<use xlink:href="img/services-sprite.svg#dna"></use>
-											</svg>
-											<span class="item-text">Холтер СМАД</span>
-										</a>
-									</li>
-									<li>
-										<a href="#" class="service-link">
-											<svg class="item-icon">
-												<use xlink:href="img/services-sprite.svg#endoscopy"></use>
-											</svg>
-											<span class="item-text">Гастроскопия</span>
-										</a>
-									</li>
-								</ul>
+								<div class="sub-column">
+									<h3 class="tpg-h3">Обследования</h3>
+									<ul class="services-list">
+										<li>
+											<a href="#" class="service-link">
+												<svg class="item-icon">
+													<use xlink:href="img/services-sprite.svg#vaccine"></use>
+												</svg>
+												<span class="item-text">Анализы </span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="service-link">
+												<svg class="item-icon">
+													<use xlink:href="img/services-sprite.svg#blood"></use>
+												</svg>
+												<span class="item-text">УЗИ</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="service-link">
+												<svg class="item-icon">
+													<use xlink:href="img/services-sprite.svg#dna"></use>
+												</svg>
+												<span class="item-text">Холтер СМАД</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="service-link">
+												<svg class="item-icon">
+													<use xlink:href="img/services-sprite.svg#endoscopy"></use>
+												</svg>
+												<span class="item-text">Гастроскопия</span>
+											</a>
+										</li>
+									</ul>
+								</div>
 
-								<h3 class="tpg-h3">Услуги</h3>
-								<ul class="services-list">
-									<li>
-										<a href="#" class="service-link">
-											<svg class="item-icon">
-												<use xlink:href="img/services-sprite.svg#hospital"></use>
-											</svg>
-											<span class="item-text">Дневной стационар</span>
-										</a>
-									</li>
-									<li>
-										<a href="#" class="service-link">
-											<svg class="item-icon">
-												<use xlink:href="img/services-sprite.svg#medical-history"></use>
-											</svg>
-											<span class="item-text">Справки</span>
-										</a>
-									</li>
-									<li>
-										<a href="#" class="service-link">
-											<svg class="item-icon">
-												<use xlink:href="img/services-sprite.svg#clipboard"></use>
-											</svg>
-											<span class="item-text">Больничные листы</span>
-										</a>
-									</li>
-								</ul>
+								<div class="sub-column">
+									<h3 class="tpg-h3">Услуги</h3>
+									<ul class="services-list">
+										<li>
+											<a href="#" class="service-link">
+												<svg class="item-icon">
+													<use xlink:href="img/services-sprite.svg#hospital"></use>
+												</svg>
+												<span class="item-text">Дневной стационар</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="service-link">
+												<svg class="item-icon">
+													<use xlink:href="img/services-sprite.svg#medical-history"></use>
+												</svg>
+												<span class="item-text">Справки</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="service-link">
+												<svg class="item-icon">
+													<use xlink:href="img/services-sprite.svg#clipboard"></use>
+												</svg>
+												<span class="item-text">Больничные листы</span>
+											</a>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -569,6 +580,9 @@
 								</div>
 							</div>
 						</div>
+						<div class="sub-xs-visible">
+							<a href="#" class="btn btn-fullwidth btn-white">Посмотреть всех врачей</a>
+						</div>
 					</div>
 				</section>
 
@@ -599,7 +613,7 @@
 
 				<section class="news-section">
 					<div class="container">
-						<div class="cards-list columns-2">
+						<div class="cards-list columns-2 lg-columns-1">
 							<div class="item">
 								<div class="section-header">
 									<div class="sh-item">
@@ -932,14 +946,38 @@
 				</section>
 			</div>
 		</div>
-		<footer class="footer" role="contentinfo">
+		<footer class="footer" role="contentinfo" style="background-image: url(img/backgrounds/footer-bg.jpg);">
 			<div class="container">
 				<div class="footer-row first">
-					<div class="footer-block">
-						<a href="" class="logo-block"></a>
-						Контакты футера
+					<div class="footer-block footer-info">
+						<a href="index.html" class="logo-block">
+							<img src="img/logo-white.png" alt="">
+						</a>
+
+						<div class="contact-block white">
+							<svg class="block-icon">
+								<use xlink:href="img/icons-sprite.svg#phone"></use>
+							</svg>
+							<div class="block-content">
+								<p class="block-caption">Экстренная помощь</p>
+								<p class="block-value">
+									<a href="tel:88000030003">8 800 003-00-03</a><br>
+									<a href="tel:88000030003">8 800 003-00-03</a>
+								</p>
+							</div>
+						</div>
+
+						<div class="contact-block white">
+							<svg class="block-icon">
+								<use xlink:href="img/icons-sprite.svg#location"></use>
+							</svg>
+							<div class="block-content">
+								<p class="block-caption">Наш адресс</p>
+								<p class="block-value small">п. Развилка, д. 45</p>
+							</div>
+						</div>
 					</div>
-					<div class="footer-block">
+					<div class="footer-block sub-xs-hidden">
 						<h3 class="footer-caption">Информация</h3>
 						<ul class="footer-nav">
 							<li><a href="#">Главная</a></li>
@@ -951,52 +989,52 @@
 							<li><a href="#">Контакты</a></li>
 						</ul>
 					</div>
-					<div class="footer-block">
+					<div class="footer-block sub-xs-hidden">
 						<h3 class="footer-caption">Наши услуги</h3>
-						<ul class="footer-nav">
+						<ul class="footer-nav columns-3 md-columns-2">
 							<li><a href="#">Аллергология</a></li>
-							<li><a href="#">Кардиология</a></li>
-							<li><a href="#">Офтальмология</a></li>
 							<li><a href="#">Андрология</a></li>
-							<li><a href="#">Косметология</a></li>
-							<li><a href="#">Плазмаферез</a></li>
 							<li><a href="#">Вакцинация </a></li>
-							<li><a href="#">Лабораторное </a></li>
-							<li><a href="#">Podology</a></li>
 							<li><a href="#">Вакцина от гриппа</a></li>
-							<li><a href="#">Логопедия</a></li>
-							<li><a href="#">Скрининг для взрослых</a></li>
 							<li><a href="#">Управление беременностью</a></li>
-							<li><a href="#">Маммология</a></li>
-							<li><a href="#">Психология</a></li>
 							<li><a href="#">Гастроэнтерология</a></li>
-							<li><a href="#">Массаж</a></li>
-							<li><a href="#">Ревматология</a></li>
 							<li><a href="#">Гематология</a></li>
+							<li><a href="#">Кардиология</a></li>
+							<li><a href="#">Косметология</a></li>
+							<li><a href="#">Лабораторное </a></li>
+							<li><a href="#">Логопедия</a></li>
+							<li><a href="#">Маммология</a></li>
+							<li><a href="#">Массаж</a></li>
 							<li><a href="#">Наркология</a></li>
+							<li><a href="#">Офтальмология</a></li>
+							<li><a href="#">Плазмаферез</a></li>
+							<li><a href="#">Podology</a></li>
+							<li><a href="#">Скрининг для взрослых</a></li>
+							<li><a href="#">Психология</a></li>
+							<li><a href="#">Ревматология</a></li>
 							<li><a href="#">Посмотреть каталог</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="footer-row second">
 					<div class="footer-block">
-						<p class="copyright">Все права защищены © 2006-2019 ДИВО-МЕД.РФ</p>
+						<p class="copyright">Все права защищены © 2006-2019 <span class="nowrap">ДИВО-МЕД.РФ</span></p>
 					</div>
 					<div class="footer-block">
 						<ul class="socials-list">
 							<li>
 								<a href="#" target="_blank" rel="nofollow">
-									<svg><use xlink:href=""></use></svg>
+									<svg><use xlink:href="img/icons-sprite.svg#facebook"></use></svg>
 								</a>
 							</li>
 							<li>
 								<a href="#" target="_blank" rel="nofollow">
-									<svg><use xlink:href=""></use></svg>
+									<svg><use xlink:href="img/icons-sprite.svg#instagram"></use></svg>
 								</a>
 							</li>
 							<li>
 								<a href="#" target="_blank" rel="nofollow">
-									<svg><use xlink:href=""></use></svg>
+									<svg><use xlink:href="img/icons-sprite.svg#youtube"></use></svg>
 								</a>
 							</li>
 						</ul>
@@ -1015,53 +1053,69 @@
 		</div>
 	</div>
 
-	<!-- <nav id="menu" class="panel">
+	<nav id="menu" class="panel">
 		<div class="panel-inner">
 			<ul class="panel-nav">
-				<li><a href="about.html">О салоне</a></li>
+				<li><a href="about.html">О клинике</a></li>
+				<li><a href="#">Стоматология</a></li>
+				<li><a href="#">Лечение</a></li>
+				<li><a href="#">Обследование</a></li>
 				<li><a href="services.html">Услуги</a></li>
 				<li><a href="prices.html">Цены</a></li>
-				<li><a href="masters.html">Мастера</a></li>
-				<li><a href="#">Фотогалерея</a></li>
-				<li><a href="proposals.html">Спецпредложения</a></li>
-				<li><a href="#">Отзывы</a></li>
+				<li><a href="reviews.html">Отзывы</a></li>
 				<li><a href="contacts.html">Контакты</a></li>
 			</ul>
 			<div class="panel-content">
-				<div class="header-contact-block">
-					<div class="block-left">
-						<p>м. Выхино <br>Ежедневно с 10 до 21 часа</p>
-					</div>
-					<div class="block-right">
-						<div class="block-phones">
-							<a href="tel:84956375043" class="phone-link">8 (495) 637-50-43</a>
-							<button class="text-btn" data-modal="#order-modal">Заказать звонок</button>
-						</div>
-						<div class="block-icon">
-							<i class="icon-phone"></i>
+				<div class="sm-visible">
+
+					<div class="contact-block">
+						<svg class="block-icon">
+							<use xlink:href="img/icons-sprite.svg#clock"></use>
+						</svg>
+						<div class="block-content">
+							<p class="block-caption">График работы</p>
+							<p class="block-value">с 9:00 до 20:00</p>
 						</div>
 					</div>
+
+					<div class="contact-block">
+						<svg class="block-icon">
+							<use xlink:href="img/icons-sprite.svg#phone"></use>
+						</svg>
+						<div class="block-content">
+							<p class="block-caption">Клиника <span>&nbsp; | &nbsp; офис 15</span></p>
+							<p class="block-value">
+								<a href="tel:88000030003">8 800 003-00-03</a>
+							</p>
+						</div>
+					</div>
+
+					<div class="contact-block">
+						<svg class="block-icon">
+							<use xlink:href="img/icons-sprite.svg#phone"></use>
+						</svg>
+						<div class="block-content">
+							<p class="block-caption">Стоматология <span>&nbsp; | &nbsp; офис 7</span></p>
+							<p class="block-value">
+								<a href="tel:88000030003">8 800 003-00-03</a>
+							</p>
+						</div>
+					</div>
+
+					<div class="contact-block">
+						<svg class="block-icon">
+							<use xlink:href="img/icons-sprite.svg#location"></use>
+						</svg>
+						<div class="block-content">
+							<p class="block-caption">Наш адресс</p>
+							<p class="block-value small">п. Развилка, д. 45</p>
+						</div>
+					</div>
+
 				</div>
-				<ul class="socials-list">
-					<li>
-						<a href="#" target="_blank" rel="nofollow" aria-label="Наш Facebook">
-							<i class="icon-facebook"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#" target="_blank" rel="nofollow" aria-label="Наш Instagram">
-							<i class="icon-instagram"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#" target="_blank" rel="nofollow" aria-label="Наш Vk">
-							<i class="icon-vk"></i>
-						</a>
-					</li>
-				</ul>
 			</div>
 		</div>
-	</nav> -->
+	</nav>
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>

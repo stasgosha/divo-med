@@ -92,7 +92,17 @@
 	text-transform: uppercase;
 }
 
+.nowrap{
+	white-space: nowrap;
+}
 
+.md-visible, .md-visible-flex{ display: none !important; }
+
+@media screen and (max-width: 991px){
+	.md-hidden{ display: none !important; }
+	.md-visible{ display: block !important; }
+	.md-visible-flex{ display: flex !important; }
+}
 
 .sm-visible, .sm-visible-flex{ display: none !important; }
 
@@ -100,4 +110,20 @@
 	.sm-hidden{ display: none !important; }
 	.sm-visible{ display: block !important; }
 	.sm-visible-flex{ display: flex !important; }
+}
+
+.xs-visible, .xs-visible-flex{ display: none !important; }
+
+@media screen and (max-width: 575px){
+	.xs-hidden{ display: none !important; }
+	.xs-visible{ display: block !important; }
+	.xs-visible-flex{ display: flex !important; }
+}
+
+.sub-xs-visible, .sub-xs-visible-flex{ display: none !important; }
+
+@media screen and (max-width: 479px){
+	.sub-xs-hidden{ display: none !important; }
+	.sub-xs-visible{ display: block !important; }
+	.sub-xs-visible-flex{ display: flex !important; }
 }

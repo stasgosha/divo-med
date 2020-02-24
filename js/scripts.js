@@ -27,6 +27,38 @@ document.addEventListener('DOMContentLoaded', function(){
 
 	equalSlideHeight('.big-slider');
 
+	$('.features-slider').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		speed: 700,
+		arrows: true,
+		...arrowsButtons,
+		dots: false,
+		infinite: true,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
+	});
+
+	equalSlideHeight('.features-slider');
+
 
 	$('.team-slider').slick({
 		slidesToShow: 4,
@@ -35,7 +67,27 @@ document.addEventListener('DOMContentLoaded', function(){
 		arrows: true,
 		...arrowsButtons,
 		dots: false,
-		infinite: true
+		infinite: true,
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
 	});
 
 	equalSlideHeight('.team-slider');
@@ -87,7 +139,21 @@ document.addEventListener('DOMContentLoaded', function(){
 		arrows: true,
 		...arrowsButtons,
 		dots: false,
-		infinite: true
+		infinite: true,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
 	});
 
 	equalSlideHeight('.reviews-slider');
@@ -108,6 +174,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
 		$(this).parent().addClass('current-menu-item').siblings().removeClass('current-menu-item');
 	});
+
+
 
 	// Tabs
 	$("[data-tab]").click(function(e){
@@ -134,27 +202,29 @@ document.addEventListener('DOMContentLoaded', function(){
 	$(".photo-card.fancybox").fancybox();
 
 	// Sticky Header
-	window.addEventListener('scroll', function(){
-		let header = document.querySelector('.header');
+	// window.addEventListener('scroll', function(){
+	// 	let header = document.querySelector('.header');
 
-		let offset = 110;
+	// 	let offset = 110;
 
-		let windowWidth = $(window).width();
+	// 	let windowWidth = $(window).width();
 
-		if (windowWidth < 992) {
-			offset = 84;
-		}
+	// 	if (windowWidth < 992) {
+	// 		offset = 84;
+	// 	}
 
-		if (windowWidth < 768) {
-			offset = 20;
-		}
+	// 	if (windowWidth < 768) {
+	// 		offset = 20;
+	// 	}
 
-		if (!!header) {
-			window.scrollY > offset
-				? header.classList.add('sticky')
-				: header.classList.remove('sticky');
-		};
-	});
+	// 	if (!!header) {
+	// 		window.scrollY > offset
+	// 			? header.classList.add('sticky')
+	// 			: header.classList.remove('sticky');
+	// 	};
+	// });
+
+	
 
 	// Accordions
 	// $('.accordion .ac-header, .accordion .opener').click(function(e){

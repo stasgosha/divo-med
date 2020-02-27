@@ -1,0 +1,25 @@
+.similar-posts-section{
+	padding: 55px 0 60px;
+
+	.section-caption{
+		margin-bottom: 15px;
+	}
+
+	.section-text{
+		margin-bottom: 20px;
+	}
+
+	.cards-list{
+		@media screen and (max-width: 991px){
+			.item:nth-child(3){
+				display: none;
+			}
+		}
+
+		@media screen and (max-width: 575px){
+			.item:nth-child(2){
+				display: none;
+			}
+		}
+	}
+}

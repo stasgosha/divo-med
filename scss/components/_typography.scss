@@ -119,3 +119,18 @@ body .tpg-body-1,
 	margin-bottom: 15px;
 	color: $accent;
 }
+
+.big-image{
+	width: 100%;
+	border-radius: 13px;
+	margin-bottom: 1.375em;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.page-text{
+	padding-bottom: 60px;
+	border-bottom: 1px solid rgba(#96a7b5, .5);
+}

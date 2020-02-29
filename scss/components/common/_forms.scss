@@ -1,24 +1,27 @@
 .form-field{
+	position: relative;
+
 	.input-field,
 	textarea{
 		border: 0;
 		height: 60px;
+		border-radius: 30px;
 		width: 100%;
-		font-size: 18px;
+		font-size: 15px;
 		color: $text-color;
 		font-family: $second-font;
-		font-weight: bold;
-		padding: 0 15px;
+		font-weight: 400;
+		padding: 0 30px;
 		outline: none !important;
 		transition: all $t;
 		appearance: none;
 		background: transparent;
-		border-bottom: 2px solid $primary;
-		border-radius: 0;
+		border: 2px solid $primary;
 
 		&::placeholder{
-			color: $primary;
+			color: $text-color;
 			transition: all $t;
+			opacity: 1;
 		}
 
 		&:focus{
@@ -55,6 +58,22 @@
 
 		&.bordered{
 			height: 100px;
+		}
+	}
+
+	&.with-icon{
+		.field-icon{
+			position: absolute;
+			left: 20px;
+			top: 50%;
+			transform: translateY(-50%);
+			fill: #3cabc1;
+			width: 22px;
+			height: 22px;
+		}
+
+		.input-field{
+			padding-left: 50px;
 		}
 	}
 }

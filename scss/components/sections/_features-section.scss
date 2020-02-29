@@ -1,0 +1,9 @@
+.features-section{
+	background: #0b7a90;
+
+	@media screen and (max-width: 991px){
+		.container{
+			max-width: 100%;
+		}
+	}
+}

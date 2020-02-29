@@ -1,0 +1,23 @@
+.prices-page-section{
+	padding-bottom: 45px;
+
+	.section-caption{
+		margin-bottom: 10px;
+	}
+
+	.section-text{
+		margin-bottom: 30px;
+	}
+
+	.section-category{
+		margin-bottom: 45px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		.tpg-h3{
+			margin-bottom: 20px;
+		}
+	}
+}

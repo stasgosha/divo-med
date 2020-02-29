@@ -1,0 +1,28 @@
+.ribbon-block{
+	padding: 100%;
+	padding: 15px 30px;
+	margin-bottom: 35px;
+	background: #1a8297;
+	color: #fff;
+	clip-path: polygon(100% 0, calc(100% - 10px) 50%, 100% 100%, 0 100%, 10px 50%, 0 0);
+
+	font-size: 16px;
+	line-height: 1.25;
+	text-align: center;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	strong{
+		font-weight: bold;
+	}
+
+	&.small{
+		padding-top: 10px;
+		padding-bottom: 10px;
+		white-space: nowrap;
+		font-size: 18px;
+		font-weight: bold;
+	}
+}

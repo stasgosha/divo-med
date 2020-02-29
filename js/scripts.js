@@ -59,6 +59,38 @@ document.addEventListener('DOMContentLoaded', function(){
 
 	equalSlideHeight('.features-slider');
 
+	$('.images-slider').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		speed: 700,
+		arrows: true,
+		...arrowsButtons,
+		dots: false,
+		infinite: true,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
+	});
+
+	equalSlideHeight('.images-slider');
+
 
 	$('.team-slider').slick({
 		slidesToShow: 4,
@@ -198,44 +230,10 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 	// Fancybox
-	$(".slick-slide .fancybox").fancybox();
-	$(".photo-card.fancybox").fancybox();
+	// $(".slick-slide .fancybox").fancybox();
+	// $(".photo-card.fancybox").fancybox();
+	$(".fancybox").fancybox();
 
-	// Sticky Header
-	// window.addEventListener('scroll', function(){
-	// 	let header = document.querySelector('.header');
-
-	// 	let offset = 110;
-
-	// 	let windowWidth = $(window).width();
-
-	// 	if (windowWidth < 992) {
-	// 		offset = 84;
-	// 	}
-
-	// 	if (windowWidth < 768) {
-	// 		offset = 20;
-	// 	}
-
-	// 	if (!!header) {
-	// 		window.scrollY > offset
-	// 			? header.classList.add('sticky')
-	// 			: header.classList.remove('sticky');
-	// 	};
-	// });
-
-	
-
-	// Accordions
-	// $('.accordion .ac-header, .accordion .opener').click(function(e){
-	// 	e.preventDefault();
-	// 	e.stopPropagation();
-
-	// 	$(this).closest('.accordion').toggleClass('opened')
-	// 			.find('.ac-content').stop().slideToggle(300);
-	// });
-
-	// $('.accordion.opened').find('.ac-content').stop().slideToggle(300);
 
 	// Scroll to anchor
 	$(document).on('click', 'a[href^="#"]', function (event) {
@@ -340,7 +338,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 	// Video
-	$('.video-block .play-btn').click(function(e){
+	$('.video-block .play-icon').click(function(e){
 		e.preventDefault();
 	})
 
@@ -354,6 +352,17 @@ document.addEventListener('DOMContentLoaded', function(){
 		createVideo(videoId);
 
 		showModal(modalId);
+	});
+
+	$('.video-widget').click(function(e){
+		e.preventDefault();
+
+		let videoId = $(this).data('video-id');
+
+		$(this).append('<div class="video-iframe" id="'+videoId+'"></div>');
+		createVideo(videoId);
+
+		$(this).addClass('playing')
 	});
 
 	var player;

@@ -1,0 +1,68 @@
+.doctor-info-section{
+	padding: 35px 0 0;
+
+	.section-text{
+		margin-bottom: 40px;
+	}
+}
+
+.directions-columns{
+	display: flex;
+	justify-content: space-between;
+	width: calc(100% + 35px * 2);
+	margin-left: -35px;
+	margin-right: -35px;
+	padding-bottom: 55px;
+	border-bottom: 1px solid #c7c7c7;
+
+	&.no-border{
+		border-bottom: 0;
+	}
+
+	.tpg-h4{
+		margin-bottom: 25px;
+	}
+
+	.column{
+		padding: 0 35px;
+
+		&:nth-child(1){
+			width: calc(100% / 12 * 5);
+		}
+
+		&:nth-child(2){
+			width: calc(100% / 12 * 4);
+		}
+
+		&:nth-child(3){
+			width: calc(100% / 12 * 3);
+		}
+	}
+
+	@media screen and (max-width: 1199px){
+		width: calc(100% + 15px * 2);
+		margin-left: -15px;
+		margin-right: -15px;
+
+		.column{
+			padding: 0 15px;
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		flex-wrap: wrap;
+		margin-bottom: 0;
+		padding-bottom: 15px;
+
+		.column{
+			width: 50% !important;
+			margin-bottom: 40px;
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		.column{
+			width: 100% !important;
+		}
+	}
+}

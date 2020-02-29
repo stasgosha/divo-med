@@ -26,6 +26,17 @@
 
 	.section-content{}
 
+	&.white-bg{
+		color: $text-color;
+		background: transparent;
+		padding-bottom: 0;
+
+		.section-inner{
+			padding-bottom: 40px;
+			border-bottom: 1px solid #c7c7c7;
+		}
+	}
+
 	@media screen and (max-width: 991px){
 		.section-inner{
 			flex-direction: column;
@@ -81,7 +92,7 @@
 	}
 
 	.slick-arrow{
-		top: 120px;
+		top: 130px;
 
 		&.slick-prev{
 			left: -25px !important;
@@ -89,6 +100,14 @@
 
 		&.slick-next{
 			right: -25px !important;
+		}
+
+		@media screen and (max-width: 991px){
+			top: 150px;
+		}
+
+		@media screen and (max-width: 767px){
+			top: 165px;
 		}
 
 		@media screen and (max-width: 479px){
@@ -106,6 +125,10 @@
 		border-radius: 10px;
 		overflow: hidden;
 		margin-bottom: 15px;
+
+		.white-bg &{
+			border: 1px solid #aab8c2;
+		}
 
 		&:before{
 			content: '';

@@ -24,6 +24,12 @@
 @import "components/common/socials-list";
 @import "components/common/menu-opener";
 @import "components/common/pagination";
+@import "components/common/ribbon-block";
+@import "components/common/big-contact-block";
+@import "components/common/circle-image";
+@import "components/common/feature-card";
+@import "components/common/accordion";
+@import "components/common/info-block";
 
 // Sections
 @import "components/sections/first-screen-section";
@@ -38,3 +44,15 @@
 @import "components/sections/actions-section";
 @import "components/sections/sigle-page-section";
 @import "components/sections/similar-posts-section";
+@import "components/sections/about-services-section";
+@import "components/sections/our-doctors-section";
+@import "components/sections/text-with-image-section";
+@import "components/sections/section-with-slider";
+@import "components/sections/doctor-section";
+@import "components/sections/advantages-section";
+@import "components/sections/features-section";
+@import "components/sections/doctor-info-section";
+@import "components/sections/prices-section";
+@import "components/sections/indication-section";
+@import "components/sections/prices-page-section";
+@import "components/sections/contact-section";

@@ -1,0 +1,70 @@
+.accordion{
+	margin-bottom: 1px;
+
+	.ac-header{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		min-height: 60px;
+		background: #dbebef;
+		color: $text-color;
+		padding: 13px 18px 13px 25px;
+		cursor: pointer;
+		transition: all $t;
+
+		&:hover,
+		&:focus-within{
+			background: darken(#dbebef, 10%);
+		}
+	}
+
+	.ac-caption{
+		font-size: 18px;
+		line-height: 28px;
+		color: inherit;
+	}
+
+	.ac-opener{
+		cursor: pointer;
+		width: 30px;
+		height: 30px;
+		appearance: none;
+		box-shadow: 0;
+		border: 0;
+		background: transparent;
+		outline: none !important;
+		transition: all $t;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		svg{
+			width: 10px;
+			height: 14px;
+			fill: $primary;
+			transform: rotate(90deg);
+			transition: all $t;
+			display: block;
+		}
+	}
+
+	.ac-content{
+		padding-bottom: 5px;
+		display: none;
+	}
+
+	&.opened{
+		.ac-header{
+			color: #fff;
+			background: $primary;
+		}
+
+		.ac-opener{
+			transform: rotate(-180deg);
+
+			svg{
+				fill: #fff;
+			}
+		}
+	}
+}

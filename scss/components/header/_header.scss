@@ -189,6 +189,13 @@
 		}
 	}
 
+	&.big{
+		.block-icon{
+			width: 40px;
+			height: 56px;
+		}
+	}
+
 	@media screen and (max-width: 1199px){
 		// .block-
 	}

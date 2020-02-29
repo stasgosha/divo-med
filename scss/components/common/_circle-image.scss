@@ -1,0 +1,25 @@
+.circle-image{
+	position: relative;
+	width: 100%;
+
+	img{
+		display: block;
+		width: 100%;
+		height: auto;
+		border-radius: 50%;
+		position: relative;
+		z-index: 2;
+	}
+
+	&:before{
+		content: '';
+		display: block;
+		width: 116.09756%;
+		height: 112.9268%;
+		background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='476' height='463' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='231.5' cy='231.5' r='231' stroke='%2304768C' stroke-opacity='.17'/%3e%3ccircle cx='231' cy='231' r='209' fill='%2304768C'/%3e%3cg fill='%2395C5CE' fill-opacity='.7'%3e%3ccircle cx='340.5' cy='92.5' r='7.5'/%3e%3ccircle cx='340.5' cy='162.5' r='7.5'/%3e%3ccircle cx='340.5' cy='231.5' r='7.5'/%3e%3ccircle cx='340.5' cy='300.5' r='7.5'/%3e%3ccircle cx='340.5' cy='369.5' r='7.5'/%3e%3ccircle cx='404.5' cy='92.5' r='7.5'/%3e%3ccircle cx='404.5' cy='162.5' r='7.5'/%3e%3ccircle cx='404.5' cy='231.5' r='7.5'/%3e%3ccircle cx='404.5' cy='300.5' r='7.5'/%3e%3ccircle cx='404.5' cy='369.5' r='7.5'/%3e%3ccircle cx='468.5' cy='92.5' r='7.5'/%3e%3ccircle cx='468.5' cy='162.5' r='7.5'/%3e%3ccircle cx='468.5' cy='231.5' r='7.5'/%3e%3ccircle cx='468.5' cy='300.5' r='7.5'/%3e%3ccircle cx='468.5' cy='369.5' r='7.5'/%3e%3c/g%3e%3c/svg%3e") no-repeat center center;
+		background-size: contain;
+		position: absolute;
+		left: 31px;
+		top: 0;
+	}
+}

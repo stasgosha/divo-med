@@ -1,0 +1,62 @@
+.big-contact-block{
+	display: flex;
+	align-items: center;
+
+	.block-icon{
+		width: 50px;
+		height: 50px;
+		padding: 0 5px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		fill: #b2d4dc;
+		margin-right: 15px;
+		flex: none;
+	}
+
+	.block-content{
+		p{
+			font-size: 22px;
+			line-height: 1;
+
+			strong{
+				color: $primary;
+				font-size: 44px;
+				line-height: 1;
+				text-transform: uppercase;
+				display: block;
+				padding-top: 7px;
+			}
+
+			a{
+				color: inherit;
+
+				&:hover{
+					color: $lightblue;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 1199px){
+		.block-content{
+			p{
+				strong{
+					font-size: 36px;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 479px){
+		.block-content{
+			p{
+				font-size: 18px;
+
+				strong{
+					font-size: 24px;
+				}
+			}
+		}
+	}
+}
